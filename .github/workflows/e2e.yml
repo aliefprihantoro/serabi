@@ -5,7 +5,7 @@ on:
     inputs:
       my_input:
         description: 'notes'
-        required: true
+        required: false
 jobs:
   test:
     timeout-minutes: 60

@@ -1,7 +1,8 @@
 import { test, expect } from '@playwright/test'
 
+(async()=>{
 const WEB_URL = 'https://www.serabingampinbuyuni.biz.id/'
-test('home', async ({ page, browserName, viewport, browser }) => {
+test('home', async ({ page, browserName, viewport }) => {
   const PATH =
     'preview/' +
     browserName +
@@ -32,3 +33,4 @@ test('home', async ({ page, browserName, viewport, browser }) => {
   // await ctx.close()
   // await page.video()?.path()
 })
+})()
