@@ -2,7 +2,10 @@
 import bloggerContent from '../blogger/main'
 import { writeFileSync } from 'fs'
 import { minify } from 'html-minifier'
+import Tes from '../components/tes.astro'
+import hello from '../components/hello.ts'
 
+console.log(hello())
 const LOC = './dist/blogger.xml'
 const MINIFY =
   import.meta.env.DEV_MODE
@@ -26,3 +29,4 @@ const MINIFY =
       })
 writeFileSync(LOC, MINIFY, { encoding: 'utf8' })
 ---
+<Tes>hello</Tes>
